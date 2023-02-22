@@ -8,6 +8,7 @@ const todoSchema = new mongoose.Schema(
       ref: "User",
     },
     title: { type: String, required: true },
+    status: { type: String, default: "pending" },
     description: { type: String, required: true },
   },
   { timestamps: true }
